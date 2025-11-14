@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --text: 'Roboto', sans-serif;
+    --white: #fff;
+    --black: #000;
+    --pad: 60px;
+    --smallpad: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--text);
+    background: var(--white);
+}
+
+#wrapper{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    padding: var(--pad);
+}
+.title h3{
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.parallax-section-1,.parallax-section-2,.parallax-section-3{
+    padding: 180px 0;
+    text-align: center;
+    color: var(--white);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-section-1{
+    background-image: url("https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?fm=jpg&q=60&w=3000");
+}
+
+.parallax-section-2{
+    background-image: url("https://images.unsplash.com/photo-1518773553398-650c184e0bb3?fm=jpg&q=60&w=3000");
+}
+
+.parallax-section-3{
+    background-image: url("https://plus.unsplash.com/premium_photo-1683121696175-d05600fefb85?fm=jpg&q=60&w=3000");
+}
+
+.parallax-section-1 h2, .parallax-section-2 h2, .parallax-section-3 h2{
+    font-size: 55px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.parallax-section-1-description,.parallax-section-2-description,.parallax-section-3-description{
+    width: 820px;
+    margin: auto;
+    padding: var(--pad);
+    background: var(--white);
+    text-align: justify;
+    line-height: 26px;
+    font-size: 17px;
+}
+
+.first-character{
+    float: left;
+    font-size: 70px;
+    line-height: 45px;
+    padding-right: 12px;
+    font-weight: bold;
+}
+
+.line{
+    width: 150px;
+    border-bottom: 2px solid var(--black);
+    margin: 20px auto;
+}
+
+
+@media(max-width: 768px){
+    .parallax-section-1-description,.parallax-section-2-description,.parallax-section-3-description{
+        width: 90%;
+        padding: var(--smallpad);
+    }
+    .parallax-section-1,.parallax-section-2,.parallax-section-3{
+        padding: 120px 0;
+    }
+    .parallax-section-1 h2, .parallax-section-2 h2, .parallax-section-3 h2{
+        font-size: 34px;
+    }
+}
+
+@media(max-width: 480px){
+    .parallax-section-1-description,.parallax-section-2-description,.parallax-section-3-description{
+        width: 90%;
+        padding: 20px;
+    }
+    .parallax-section-1, .parallax-section-2, .parallax-section-3{
+        padding: 100px 0;
+    }
+    .title h3{
+        font-size: 22px;
+    }
+}
